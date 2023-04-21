@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif, Bold;
+    box-sizing: border-box;
+}
+
+body{
+    background: #0b0b0b;
+    color: #fff;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+.description{
+    font-size: 18px;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 200px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #ff0000;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 40px;
+}
+
+.header-text h1{
+    font-size: 60xpx;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif, Bold;
+}
+
+.header-text h1 span{
+    color: #ff0000;
+    font-family: 'Times New Roman', Times, serif, Bold;
+    font-size: 80px;
+}
+
+
+/* <--------------about----------------> */
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.subtitle{
+    font-size: 50px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff0000;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 70%;
+}
+
+.tab-contents ul li{
+     list-style: none;
+     margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* ----------------Services----------------- */
+
+.container2{
+    margin: 15px 165px 30px 165px;
+}
+
+.container2 h1{
+    font-size: 50px;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 20px;
+    transition: backgound 0.5s, transform 0.5s;
+}
+
+.services-list div i{
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block; 
+}
+.services-list p{
+    font-size: 18px;
+}
+
+.services-list div:hover{
+    background: #ff004f;
+    transform: translateY(-30px);
+}
+
+/* ---------------My Work------------------- */
+
+
+#portfolio{
+    padding: 50px 0;
+}

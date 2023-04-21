@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - Aman Kumar Mishra</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/aceb6360f1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id = "header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Mechanical Engineer</p>
+                <h1>Hi, I'm <span>Aman</span><br>Mishra from India</h1>
+            </div>
+        </div>
+    </div>
+ 
+    
+<!--------------about---------------->
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p class="description">Greetings! I am a Mechanical Engineer with expertise in 3D modeling and graphic design. 
+                        With a passion for creativity and problem-solving, I am skilled in creating accurate and intricate designs 
+                        using software such as SolidWorks, Autodesk Fusion 360, and CATIA, while also creating visually appealing 
+                        graphics for web portfolios using Adobe Illustrator.
+                        My eye for detail and collaborative mindset allow me to create designs that are both functional and 
+                        aesthetically pleasing. As a lifelong learner, I am always eager to explore new tools and techniques 
+                        to further hone my skills.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>3-D Modeling</span><br>Rapdi 3D Modeling and prototypind using 3D printing and other additive manufacturing techniques</li>
+                            <li><span>Graphic Designing</span><br>Illustration/Graphic Designing for visually appealing designs</li>
+                            <li><span>FEA</span><br>Finite Element analysis & Other simulation techiniques for stress and thermal analysis</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Feb 2023 - Current</span><br>Intern - Daimler Trucks Innovation Centre India</li>
+                            <li><span>May 2020 - Jan 2022</span><br>Trainee - Vehicle Dynamics & Powertrain - Formula Student Team - Force Ikshvaku Racing</li>
+                            <li><span>Sep 2021 - Oct 2021</span><br>Intern - Rexroth Bosch</li>
+                            <li><span>Sep 2021 - Jun 2022</span><br>Lead & Mentor - Campus Venture & B-Plans - Onyx E-Cell</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2023</span><br>B. Tech from The National Institute of Engineering</li>
+                            <li><span>2019</span><br>Pre University Certificate from Sri Chaitanya</li>
+                            <li><span>2017</span><br>10th from Kendriya Vidyalaya</li>
+                        </ul>
+                    </div>
+                </div>                  
+            </div>
+        </div>
+    </div>
+
+
+<!-- -----------------Services--------------------- -->
+
+    <div id="services">
+        <div class="container2">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-cube"></i> 
+                    <h2>3D Modeling</h2>
+                    <p>
+                        I am a freelance 3D modeler with extensive experience in creating highly-detailed and accurate digital models for a range of industries, 
+                        including architecture, product design, and video game development.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-palette"></i>
+                    <h2>Graphic Designing</h2>
+                    <p>
+                        I am a freelance graphic/illustration/merchandise designer with a passion for bringing ideas to life.My services are tailored to meet the specific 
+                        needs of my clients, whether they are looking for a new logo design, custom illustrations, or merchandise design.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                    <h2>UI designing</h2>
+                    <p>
+                        I am a freelance UI designer with extensive experience in creating intuitive, user-friendly interfaces for a range of digital products, including 
+                        websites, mobile apps, and software applications.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ----------------------portfolio------------------     -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- --------------script------------ -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
