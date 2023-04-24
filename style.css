@@ -124,7 +124,7 @@ nav ul li a:hover::after{
 
 .tab-links{
     margin-right: 50px;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -162,8 +162,20 @@ nav ul li a:hover::after{
 
 .tab-contents.active-tab{
     display: block;
+    font-size: 20px;
 }
 
+#Skills {
+    font-size: 20px;
+}
+
+.tab-contents.active-tab span{
+    font-size: 22px;
+}
+
+.description{
+    font-size: 21px;
+}
 /* ----------------Services----------------- */
 
 .container2{
@@ -222,4 +234,11 @@ nav ul li a:hover::after{
 
 #portfolio{
     padding: 50px 0;
+}
+.container3{
+    margin: 15px 165px 30px 165px;
+}
+
+.container3 h1{
+    font-size: 50px;
 }
