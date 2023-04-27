@@ -314,8 +314,8 @@ nav ul li a:hover::after{
 .btn:hover{
     background: #ff0000;
 }
-.container3 h1{
-    font-size: 50px;
+.container3 h3{
+    font-size: 25px;
 }
 /* ---------contact---------------- */
 
@@ -452,16 +452,19 @@ nav .fas{
         margin-right: 20px;
     }
     .container2{
-        margin: 67px;
+        margin: 50px;
     }
     .container3{
-        margin: 67px;
+        margin: 50px;
     }
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
     .copyright{
         font-size: 14px;
+    }
+    .media{
+        font-size: 12px;
     }
 
 }
