@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background: #0b0b0b;
     color: #fff;
@@ -381,6 +385,12 @@ form .btn2{
 .dun{
     font-size: 20px;
 }
+#msg{
+    color: #ff004f;
+    margin-top: -35px;
+    display: block;
+    font-size: 20px;
+}
 
 /* ---------------Css for small screen-------------------- */
 nav .fas{
@@ -411,6 +421,7 @@ nav .fas{
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
+        transition: 0.2s;
     }
     nav ul li{
         display: block;
@@ -422,4 +433,34 @@ nav .fas{
         left: 25px;
         cursor: pointer;
     }
+
+    .subtitle{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 20px;
+    }
+    .about-col-2{
+        font-size: 20px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .container2{
+        margin: 67px;
+    }
+    .container3{
+        margin: 67px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+
 }
